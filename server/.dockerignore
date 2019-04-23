@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+.gitignore
+database.json
+docker-compose.yml
+Dockerfile
+README.md

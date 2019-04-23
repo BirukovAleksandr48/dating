@@ -1,0 +1,40 @@
+
+
+.Users
+  display: flex
+  flex: 1
+  flex-flow: wrap
+  margin: 5px
+  height: fit-content
+
+  .no-users
+    display: flex
+    flex-direction: column
+    flex: 1
+    align-items: center
+    padding: 200px 0
+
+    .no-users-image
+      width: 128px
+      height: 128px
+      background-image: url("../../assets/icons/no-users.png")
+      background-size: cover
+      background-position: center
+
+    .no-users-text
+      font-family: 'Montserrat', sans-serif
+      font-size: 24px
+      text-align: center
+
+  .user-item
+    padding: 0 5px
+    box-sizing: border-box
+    height: 260px
+    width: 25%
+
+    @media (max-width: 1000px)
+      width: 33.3%
+    @media (max-width: 800px)
+      width: 50%
+    @media (max-width: 600px)
+      width: 100%

@@ -1,0 +1,160 @@
+.UserProfile
+  display: flex
+  flex-direction: column
+  flex: 1
+  min-width: 650px
+
+  .user-info
+    display: flex
+    margin: 5px
+    height: fit-content
+    background-color: white
+
+    .left-block
+      padding: 20px
+      width: fit-content
+      display: flex
+      flex-direction: column
+
+      .avatar
+        height: 300px
+        width: 250px
+        background-position: center
+        background-size: cover
+
+      .btn-send-message
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        text-decoration: none
+        font-weight: bold
+        font-size: 20px
+        color: white
+        text-align: center
+        border: 2px solid #ff7c2e
+        background-color: #ff7c2e
+        border-radius: 5px
+        padding: 5px
+        margin-top: 8px
+
+    .right-block
+      padding: 20px 80px 20px 40px
+      width: fit-content
+      display: flex
+      flex-direction: column
+      @media (max-width: 980px)
+        padding: 20px 15px
+
+      .text
+        font-family: 'Montserrat', sans-serif
+        font-weight: 500
+
+      .name
+        @extend .text
+        font-size: 22px
+        font-weight: 600
+        padding-bottom: 10px
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5)
+
+      .status
+        @extend .text
+        font-size: 16px
+        margin: 10px 0
+        flex: 1
+
+      .full-info
+        display: flex
+        flex-direction: column
+
+        .table-title
+          @extend .text
+          font-size: 18px
+          margin-bottom: 10px
+
+        table
+          border-collapse: collapse
+          width: 100%
+
+          th, td
+            text-align: left
+            padding: 8px
+
+          tr:nth-child(odd)
+            background-color: #f2f2f2
+
+          th
+            background-color: #4CAF50
+            color: white
+
+  .user-album-header
+    display: flex
+    justify-content: space-between
+    background-color: white
+    margin: 10px 5px 0 5px
+    padding-bottom: 5px
+
+    .album-header-text
+      font-size: 24px
+      font-weight: 500
+      margin: 10px
+
+    .btn-upload
+      -webkit-touch-callout: none
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+      text-decoration: none
+      font-weight: bold
+      cursor: pointer
+      font-size: 20px
+      color: white
+      text-align: center
+      border: 2px solid #ff7c2e
+      background-color: #ff7c2e
+      border-radius: 5px
+      padding: 5px
+      margin: 8px
+
+    .input-file
+      width: 0.1px
+      height: 0.1px
+      opacity: 0
+      overflow: hidden
+      position: absolute
+      z-index: -1
+
+  .user-album
+    display: flex
+    flex-direction: column
+    background-color: white
+    margin: 0 5px
+    padding-bottom: 5px
+    height: fit-content
+
+    .no-photo
+      display: flex
+      flex-direction: column
+      flex: 1
+      align-items: center
+      padding: 50px
+
+      .no-photo-image
+        width: 128px
+        height: 128px
+        background-image: url("../../assets/icons/no-photos.png")
+        background-size: cover
+        background-position: center
+
+      .no-photo-text
+        font-family: 'Montserrat', sans-serif
+        font-size: 24px
+        text-align: center
+
+
+    .gallery
+      display: flex
+      flex-flow: wrap
+

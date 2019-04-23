@@ -1,0 +1,73 @@
+.CreateUserForm
+  display: flex
+  flex-direction: column
+  background-size: cover
+  margin: 5px
+  font-family: 'Montserrat', sans-serif
+  height: fit-content
+  align-items: center
+  min-width: 400px
+
+  .edit
+    display: flex
+    flex-direction: column
+    max-width: 700px
+    width: 100%
+    background-color: #FFFFFF
+
+    .row
+      display: flex
+      flex-direction: row
+      flex: 1
+      @media (max-width: 800px)
+        flex-direction: column
+
+      .btnSave
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        text-decoration: none
+        font-weight: bold
+        cursor: pointer
+        font-size: 20px
+        color: white
+        text-align: center
+        border: 2px solid #ff7c2e
+        background-color: #ff7c2e
+        border-radius: 5px
+        padding: 5px
+        margin: 8px
+        flex: 1
+
+      .inactive
+        background-color: #a49b9d
+        border: 2px solid #a49b9d
+        pointer-events: none
+
+      .btn-upload
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        text-decoration: none
+        font-weight: bold
+        cursor: pointer
+        font-size: 20px
+        color: white
+        text-align: center
+        border: 2px solid #ff7c2e
+        background-color: #ff7c2e
+        border-radius: 5px
+        padding: 5px
+        margin: 8px
+
+      .input-file
+        width: 0.1px
+        height: 0.1px
+        opacity: 0
+        overflow: hidden
+        position: absolute
+        z-index: -1

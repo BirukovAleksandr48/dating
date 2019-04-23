@@ -1,0 +1,45 @@
+.AdvertItem
+  display: flex
+  width: 100%
+  flex-direction: column
+  padding: 10px
+  border-radius: 10px
+  box-sizing: border-box
+  justify-content: space-between
+  margin-bottom: 10px
+  word-break: break-all
+
+  .body
+    display: flex
+    flex-direction: column
+    .title
+      font-family: 'Montserrat', sans-serif
+      font-size: 16px
+      font-weight: 500
+      margin-bottom: 10px
+
+    .text
+      font-family: 'Montserrat', sans-serif
+      font-size: 14px
+      word-wrap: break-word
+
+  .footer
+    display: flex
+    justify-content: flex-end
+    height: 25px
+
+  .footer>*
+    display: none
+    font-size: 15px
+    font-family: 'Montserrat', sans-serif
+    color: #000000
+    cursor: pointer
+    user-select: none
+    margin-left: 10px
+    border: 1px solid #000000
+    padding: 4px
+
+.AdvertItem:hover
+  .footer>*
+    display: block
+

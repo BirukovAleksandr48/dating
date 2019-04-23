@@ -1,0 +1,67 @@
+.CommentItem
+  display: flex
+  border-bottom: 1px solid #b8b8b888
+
+  .comment-avatar
+    width: 50px
+    height: 50px
+    background-position: center
+    background-size: cover
+    border-radius: 50%
+    margin: 10px 0
+
+  .comment-body
+    display: flex
+    flex-direction: column
+    flex: 1
+    margin: 10px
+
+    .comment-header
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+      .username
+        font-family: 'Montserrat', sans-serif
+        font-size: 16px
+        font-weight: 500
+
+      .comment-delete,.comment-edit
+        display: none
+        font-size: 13px
+        font-family: 'Montserrat', sans-serif
+        color: #878787
+        text-decoration: underline
+        cursor: pointer
+        user-select: none
+        margin-left: 10px
+
+    .comment-date
+      font-family: 'Montserrat', sans-serif
+      font-size: 12px
+      color: #595959
+
+    .comment-text-wrapper
+      background-color: #e5e6fc
+      border-radius: 10px
+      padding: 15px
+      margin-top: 10px
+      max-width: 480px
+
+      .comment-text
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        line-height: 1.7
+        overflow-wrap: break-word
+
+.CommentItem:hover .comment-header .comment-delete
+  display: inline
+
+.CommentItem:hover .comment-header .comment-edit
+  display: inline
+
+.CommentItem.selected
+  background-color: #bcc2e5
+  .comment-body .comment-text
+    background-color: #fce4b7
+

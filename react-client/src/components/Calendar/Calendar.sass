@@ -1,0 +1,125 @@
+//@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800')
+
+.Calendar
+  width: 100%
+  display: flex
+  flex-direction: column
+  user-select: none
+
+  .Calendar-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 calc(20vmin / 4)
+    position: relative
+    background-color: #0B3157
+
+    .Calendar-header-btn
+      color: #48C1C2
+      font-size: calc(14vmin / 4)
+      font-family: 'Montserrat', sans-serif
+      font-weight: 700
+      line-height: calc(40vmin / 4)
+      cursor: pointer
+
+    .Calendar-header-title
+      display: flex
+      cursor: pointer
+
+      .title-text
+        color: #FFFFFF
+        font-family: 'Montserrat', sans-serif
+        font-weight: 800
+        font-size: calc(16vmin / 4)
+        line-height: calc(19vmin / 4)
+
+      .title-btn
+        width: calc(20vmin / 4)
+        height: calc(20vmin / 4)
+        background-size: cover
+        background-position: center
+        opacity: 0.5
+        margin: 0 calc(10vmin / 4)
+        background-image: url("../../assets/icons/down.png")
+
+      .open
+        transform: rotate(180deg)
+
+    .Calendar-header-dropdown
+      background-color: #0B3157
+      position: absolute
+      top: calc(40vmin / 4)
+      left: 0
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      z-index: 2
+
+      .Calendar-desplay-type
+        color: #E8E9EB
+        font-family: Montserrat, sans-serif
+        font-size: calc(14vmin / 4)
+        line-height: calc(28vmin / 4)
+        font-weight: 400
+        margin: calc(7vmin / 4) calc(3vmin / 4)
+        border: 1px solid #E8E9EB
+        border-radius: 20px
+        padding: 0 calc(20vmin / 4)
+        opacity: 0.5
+
+    .Calendar-header-dropdown.close
+      display: none
+
+  .Calendar-body
+    display: flex
+    flex-direction: column
+
+    .Calendar-days-os-week
+      display: flex
+      justify-content: space-around
+      background-color: #0B3157
+      padding: 0 calc(10vmin / 4)
+
+      .Calendar-days-os-week-item
+        color: #FFFFFF
+        opacity: 0.5
+        font-family: 'Montserrat', sans-serif
+        font-weight: 400
+        font-size: calc(11vmin / 4)
+        line-height: calc(20vmin / 4)
+
+    .Calendar-days
+      display: flex
+      justify-content: space-around
+      padding: calc(10vmin / 4)
+
+      .Calendar-days-item
+        width: calc(40vmin / 4)
+        text-align: center
+        line-height: calc(40vmin / 4)
+        color: #0B3157
+        font-family: 'Montserrat', sans-serif
+        font-size: calc(16vmin / 4)
+        font-weight: 400
+        background-color: #FFFFFF
+        margin: 0 calc(5vmin / 4)
+        border-radius: 5px
+        box-sizing: border-box
+        cursor: pointer
+
+      .Calendar-days-item.selected
+        color: #FFFFFF
+        background-color: #0B3157
+
+      .Calendar-days-item:hover
+        border: 1px solid #E8E9EB
+        line-height: calc(38vmin / 4)
+
+  .Calendar-selected-day
+    color: #0B3157
+    font-family: 'Montserrat', sans-serif
+    font-weight: 800
+    font-size: calc(14vmin / 4)
+    line-height: calc(40vmin / 4)
+    padding: 0 calc(10vmin / 4)

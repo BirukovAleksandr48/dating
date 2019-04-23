@@ -1,0 +1,66 @@
+version: '2'
+services:
+
+#  front-dev:
+#    build:
+#      context: ./client
+#
+#    depends_on:
+#      - server-dev
+#    volumes:
+#      - ./client:/client
+#      - /client/node_modules
+#    ports:
+#      - "8080:8080"
+#      - "6006:6006"
+
+  react-front-dev:
+      build:
+        context: ./react-client
+
+      depends_on:
+        - server-dev
+      volumes:
+        - ./react-client:/react-client
+        - /react-client/node_modules
+      ports:
+        - "3005:3005"
+        - "9001:9001"
+
+  server-dev:
+    build:
+      context: ./server
+
+    environment:
+      NODE_ENV: development
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db-dev
+    volumes:
+      - /var/www/html/images:/var/www/html/images
+      - ./server:/server
+      - /server/node_modules
+
+  db-dev:
+    image: postgres:10
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=todo-dev
+    ports:
+      - "5432:5432"
+
+  mongo-dev:
+    image: mongo:latest
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - "27017:27017"
+    command: mongod --smallfiles --logpath=/dev/null
+
+volumes:
+  server-dev:

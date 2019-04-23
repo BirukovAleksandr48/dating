@@ -1,0 +1,135 @@
+.Conversation
+  display: flex
+  flex-direction: column
+  max-height: 100%
+  flex: 1
+
+  .header
+    display: flex
+    flex-direction: row
+    height: 50px
+    min-height: 50px
+    align-items: center
+
+    .btn-back
+      margin: 0 5px
+      height: 40px
+      width: 40px
+      background-image: url("../../../../assets/icons/back.png")
+      background-size: 30px
+      background-position: center
+      background-repeat: no-repeat
+      opacity: .65
+      cursor: pointer
+      &:hover
+        opacity: 1
+        transition: opacity .3s ease
+
+    .avatar
+      height: 40px
+      width: 40px
+      border-radius: 100%
+      background-color: #FF6187
+      display: flex
+      justify-content: center
+      align-items: center
+      text-transform: uppercase
+      font-size: 16px
+      letter-spacing: 1px
+      color: white
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+      cursor: pointer
+
+    .name
+      margin-left: 10px
+      font-size: 16px
+      cursor: pointer
+
+
+  .content
+    flex: 1
+    overflow-y: hidden
+    background: linear-gradient(#c6e7f4, #96c4d5)
+    display: flex
+    flex-direction: column
+    word-wrap: break-word
+    padding-right: 5px
+    &:hover
+      overflow-y: scroll
+      padding-right: 0
+    &::-webkit-scrollbar
+      width: 5px
+    &::-webkit-scrollbar-track
+      background: inherit
+    &::-webkit-scrollbar-thumb
+      background: white
+      border-radius: 10px
+
+    .MessageItem
+      position: relative
+      padding: 10px 15px 10px 5px
+      color: #0E0F10
+      font-size: 14px
+      margin-top: 3px
+      margin-bottom: 3px
+      float: left
+      max-width: 270px
+      box-sizing: border-box
+      align-self: flex-start
+      background: white
+      border-radius: 10px 10px 10px 0
+      margin-right: 5px
+      margin-left: 20px
+
+    .mine
+      align-self: flex-end
+      background: #befdbd
+      border-radius: 10px 10px 0 10px
+      margin-right: 20px
+      margin-left: 10px
+
+
+  .write-message-panel
+    position: relative
+    min-height: 43px
+    display: flex
+    align-items: center
+
+    .message-input
+      resize: vertical
+      max-width: 320px
+      min-width: 320px
+      min-height: 16px
+      width: 320px
+      border: none
+      outline: none
+      overflow: no-display
+      line-height: 16px
+      padding-left: 10px
+      padding-right: 48px
+      box-sizing: border-box
+      font-family: 'Aleo', Helvetica, Arial, sans-serif
+      letter-spacing: .5px
+      &::-webkit-scrollbar
+        display: none
+      &::placeholder
+        color: #A2A1A0
+
+    .message-btn
+      background-image: url("../../../../assets/icons/send.png")
+      background-color: white
+      background-position: center
+      background-size: 26px
+      background-repeat: no-repeat
+      border: none
+      outline: none
+      position: absolute
+      width: 43px
+      height: 43px
+      bottom: 0
+      right: 0
+      padding: 0
+      &:hover
+        background-image: url("../../../../assets/icons/send-selected.png")

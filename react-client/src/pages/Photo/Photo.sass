@@ -1,0 +1,115 @@
+.Photo
+  display: flex
+  flex-direction: column
+  flex: 1
+
+  .photo-container
+    display: flex
+    height: fit-content
+    max-height: 500px
+    min-height: 300px
+    min-width: 400px
+    margin: 5px
+    background-color: white
+    align-items: center
+    justify-content: center
+
+
+    .photo
+      display: block
+      max-width: 100%
+      max-height: 100%
+      width: auto
+      height: auto
+
+  .comments-container
+    background-color: white
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 5px
+
+    .comment-items
+      max-width: 600px
+      margin-top: 20px
+      width: 100%
+      max-height: 600px
+      overflow: auto
+      &::-webkit-scrollbar
+        width: 5px
+      &::-webkit-scrollbar-thumb
+        background: #888
+      &::-webkit-scrollbar-track
+        background: #f1f1f1
+      &::-webkit-scrollbar-thumb:hover
+        background: #555
+
+  .add-comment
+      display: flex
+      max-width: 600px
+      width: 100%
+      margin: 10px 0
+
+      .comment-text
+        display: flex
+        flex: 1
+
+        textarea
+          outline: none
+          -moz-appearance: none
+          border: 1px solid #999
+          resize: none
+          border-radius: 10px
+          width: 100%
+          height: 80px
+          padding: 10px
+
+      .comment-buttons
+        display: flex
+        flex-direction: column
+        margin: 0 10px
+
+        .comment-btn
+          cursor: pointer
+          font-family: 'Montserrat', sans-serif
+          font-size: 14px
+          line-height: 40px
+          padding: 0 20px
+          height: 40px
+          width: 60px
+          text-align: center
+          border-radius: 10px
+          margin-bottom: 5px
+
+        .btnSendComment
+          @extend .comment-btn
+          background-color: #319dd4
+          color: white
+
+        .btnSendComment:hover
+          background-color: white
+          color: #319dd4
+          border: 1px solid #319dd4
+          width: 58px
+
+        .btnEditComment
+          @extend .comment-btn
+          background-color: #319dd4
+          color: white
+
+        .btnEditComment:hover
+          background-color: white
+          color: #319dd4
+          border: 1px solid #319dd4
+          width: 58px
+
+        .btnCancelEditComment
+          @extend .comment-btn
+          background-color: #ea1627
+          color: white
+
+        .btnCancelEditComment:hover
+          background-color: white
+          color: #ea1627
+          border: 1px solid #ea1627
+          width: 58px

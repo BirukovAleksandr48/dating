@@ -1,0 +1,74 @@
+.AdvertPage
+  display: flex
+  flex-direction: column
+  margin: 5px
+  font-family: 'Montserrat', sans-serif
+  flex: 1
+  height: fit-content
+
+  .advert-control-panel
+    display: flex
+    margin-bottom: 5px
+    background-color: #FFFFFF
+    padding: 5px
+
+    .advert-find-input
+      flex: 1
+      font-family: 'Montserrat', sans-serif
+      font-size: 16px
+      padding: 0 10px
+
+    .comment-btn
+      cursor: pointer
+      font-family: 'Montserrat', sans-serif
+      font-size: 16px
+      font-weight: 500
+      line-height: 30px
+      padding: 0 30px
+      height: 30px
+      text-align: center
+      margin-left: 5px
+      border: 1px solid #319dd4
+
+    .advert-find-btn,.advert-add-btn
+      @extend .comment-btn
+      background-color: #319dd4
+      color: white
+
+    .advert-find-btn:hover,.advert-add-btn:hover
+      background-color: white
+      color: #319dd4
+
+
+  .advert-list
+    display: flex
+    background-color: #FFFFFF
+    padding: 5px
+
+    .column
+      display: flex
+      flex-direction: column
+      flex: 1
+
+  .advert-list>*
+    margin: 5px
+
+  .advert-list-empty
+    display: flex
+    flex-direction: column
+    flex: 1
+    align-items: center
+    padding: 50px
+
+    .no-advert-icon
+      width: 128px
+      height: 128px
+      background-image: url("../../assets/icons/no-photos.png")
+      background-size: cover
+      background-position: center
+      margin-bottom: 20px
+
+    .no-advert-text
+      font-family: 'Montserrat', sans-serif
+      font-size: 24px
+      text-align: center

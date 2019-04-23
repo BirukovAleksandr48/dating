@@ -1,0 +1,87 @@
+.DefaultHeader
+  display: flex
+  background-color: #319dd4
+  justify-content: center
+
+  .headerContent
+    max-width: 1200px
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 12px
+
+    .logotype
+      display: flex
+      flex-direction: column
+      align-items: center
+      cursor: pointer
+
+      .logo
+        background-image: url("../../../assets/logo.png")
+        height: 40px
+        width: 250px
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        @media (max-width: 450px)
+          width: 150px
+        @media (max-width: 350px)
+          width: 120px
+
+    .current-user
+      display: flex
+      flex-direction: row
+      align-items: center
+
+      .dropdown-menu
+        position: relative
+        display: inline-block
+
+        .dropdown-btn
+          display: flex
+          cursor: pointer
+          align-items: center
+
+          .title
+            color: white
+            font-weight: 600
+            font-family: 'Montserrat', sans-serif
+
+          .icon
+            width: 20px
+            height: 20px
+            background-image: url("../../../assets/icons/gear.png")
+            background-position: center
+            background-size: cover
+            margin-right: 10px
+
+        .dropdown-content
+          display: none
+          position: absolute
+          right: 0
+          background-color: #f9f9f9
+          min-width: 160px
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+          z-index: 1
+          cursor: pointer
+
+        .dropdown-content a
+          color: black
+          padding: 8px 16px
+          text-decoration: none
+          font-family: 'Montserrat', sans-serif
+          display: block
+
+        .dropdown-content a:hover
+          background-color: #f1f1f1
+
+      .dropdown-menu:hover .dropdown-content
+        display: block
+
+      .avatar
+        width: 40px
+        height: 40px
+        background-size: cover
+        background-position: center
+        cursor: pointer

@@ -1,0 +1,146 @@
+
+.HomeHeader
+  display: flex
+  background-color: #319dd4
+  justify-content: center
+  font-family: 'Montserrat', sans-serif
+
+  .headerContent
+    width: 1200px
+    display: flex
+    flex-direction: row
+    background-color: #319dd4
+    justify-content: space-between
+    padding: 12px
+    @media (max-width: 800px)
+      flex-direction: column
+      align-items: center
+
+    .logotype
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      .logo
+        background-image: url("../../../assets/logo.png")
+        height: 60px
+        width: 250px
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+
+      .logoText
+        color: white
+        font-size: 20px
+        font-weight: 500
+
+    .loginContainer
+      display: flex
+      flex-direction: column
+      align-self: center
+      @media (max-width: 800px)
+        display: none
+
+      .loginTitle
+        color: white
+        font-weight: 600
+
+      .inputs
+        display: flex
+        flex-direction: row
+        margin-top: 5px
+
+        .login
+          padding: 3px
+          margin-right: 10px
+          width: 150px
+
+        .password
+          padding: 3px
+          width: 150px
+
+        .btnLogin
+          -webkit-touch-callout: none
+          -webkit-user-select: none
+          -moz-user-select: none
+          -ms-user-select: none
+          user-select: none
+          text-decoration: none
+          font-weight: bold
+          cursor: pointer
+          font-size: 14px
+          color: white
+          border: 2px solid white
+          padding: 5px 50px
+          margin-left: 5px
+
+      .loginFooter
+        display: flex
+        flex-direction: row
+
+        .forgotPass
+          color: white
+          padding: 3px
+          cursor: pointer
+          user-select: none
+
+    .btnHaveAcc
+      -webkit-touch-callout: none
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+      text-decoration: none
+      font-weight: bold
+      cursor: pointer
+      font-size: 14px
+      color: white
+      border: 2px solid white
+      padding: 5px 50px
+      margin-top: 10px
+      @media (min-width: 800px)
+        display: none
+
+
+    .loginMobile
+      display: flex
+      flex-direction: column
+      flex: 1
+      width: 100%
+      max-width: 400px
+      padding: 20px
+      @media (min-width: 800px)
+        display: none
+
+      .login
+        padding: 3px
+        margin: 5px
+
+      .password
+        padding: 3px
+        margin: 5px
+
+      .forgotPass
+        color: white
+        padding: 3px
+        margin: 5px
+        cursor: pointer
+        user-select: none
+
+      .btnLogin
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        text-decoration: none
+        font-weight: bold
+        cursor: pointer
+        font-size: 14px
+        color: white
+        border: 2px solid white
+        padding: 5px 50px
+        margin: 5px
+        text-align: center
+    .isHiden
+      display: none

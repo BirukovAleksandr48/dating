@@ -1,0 +1,75 @@
+.SignUp
+  display: flex
+  flex-direction: column
+  background-image: url("../../../../assets/signup_bg.jpg")
+  background-size: cover
+  padding: 90px 100px
+  font-family: 'Montserrat', sans-serif
+  @media (max-width: 800px)
+    padding: 50px 50px
+
+  .UserDataForm
+    display: flex
+    flex-direction: column
+    align-self: center
+    max-width: 700px
+    width: 100%
+
+    .row > *
+      margin: 5px
+
+    .row
+      display: flex
+      flex-direction: row
+      flex: 1
+      @media (max-width: 800px)
+        flex-direction: column
+
+  .regFooter>*
+    margin: 5px
+
+  .regFooter
+    display: flex
+    align-self: center
+    max-width: 700px
+    width: 100%
+    @media (max-width: 800px)
+      flex-direction: column
+
+    .checkBox
+      display: flex
+      flex-direction: row
+      align-items: center
+      flex: 1
+
+      .cbText
+        margin-left: 5px
+        color: #f1f1f1
+        font-size: 22px
+        font-weight: 600
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+
+
+      .cbText:hover
+        cursor: pointer
+
+    .btnSignUp,.btnNextForm
+      -webkit-touch-callout: none
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+      text-decoration: none
+      font-weight: bold
+      cursor: pointer
+      font-size: 20px
+      color: white
+      text-align: center
+      background-color: #ff7c2e
+      border-radius: 5px
+      padding: 5px 0
+      flex: 1

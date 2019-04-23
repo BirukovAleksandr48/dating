@@ -1,0 +1,47 @@
+.AcceptForm
+  margin-top: 30px
+  display: flex
+  flex-direction: column
+  width: 400px
+
+  .text
+    margin-bottom: 15px
+    font-family: 'Montserrat', sans-serif
+    font-size: 22px
+    font-weight: 500
+
+  .buttons
+    display: flex
+    justify-content: flex-end
+
+    .btn
+      cursor: pointer
+      font-family: 'Montserrat', sans-serif
+      font-size: 18px
+      font-weight: 600
+      line-height: 35px
+      padding: 0 30px
+      height: 35px
+      width: fit-content
+      text-align: center
+      border-radius: 10px
+      color: white
+      margin: 0 5px
+
+    .accept
+      @extend .btn
+      background-color: #46a758
+
+    .accept:hover
+      background-color: white
+      color: #46a758
+      border: 2px solid #46a758
+
+    .reject
+      @extend .btn
+      background-color: #f9a02c
+
+    .reject:hover
+      background-color: white
+      color: #f9a02c
+      border: 2px solid #f9a02c

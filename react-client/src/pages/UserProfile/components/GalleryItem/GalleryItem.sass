@@ -1,0 +1,33 @@
+.GalleryItem
+  display: flex
+  padding: 2px
+  box-sizing: border-box
+  height: 260px
+  width: 25%
+  cursor: pointer
+  position: relative
+  @media (max-width: 1050px)
+    width: 33.3%
+  @media (max-width: 850px)
+    width: 50%
+  @media (max-width: 600px)
+    width: 100%
+
+  .image
+    width: 100%
+    height: 250px
+    background-size: cover
+    background-position: center
+
+.GalleryItem:hover
+  .photo-delete
+    width: 25px
+    height: 25px
+    position: absolute
+    top: 3px
+    right: 3px
+    background-image: url("../../../../assets/icons/delete.png")
+    background-size: cover
+    background-position: center
+    background-color: rgba(0,0,0,0.5)
+    z-index: 999

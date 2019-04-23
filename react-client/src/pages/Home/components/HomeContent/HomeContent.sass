@@ -1,0 +1,127 @@
+.contentWrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  .content
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 1000px
+    margin: 50px 100px
+    @media (max-width: 800px)
+      margin: 50px 30px
+
+    .title
+      font-size: 42px
+      font-weight: 600
+      margin-bottom: 20px
+
+    .titleMain
+      @extend .title
+      color: #ff7c2e
+
+    .titleBlue
+      @extend .title
+      color: #319dd4
+
+    .simpleText
+      font-size: 22px
+      line-height: 1.5
+
+    .item
+      display: flex
+      flex-direction: row
+      margin-top: 40px
+      flex: 1
+      @media (max-width: 800px)
+        flex-direction: column
+
+      .image
+        display: flex
+        flex: 1
+        align-items: center
+        justify-content: center
+
+      .data
+        display: flex
+        flex: 1
+        flex-direction: column
+        margin: 50px 0
+        @media (max-width: 800px)
+          text-align: center
+
+    .reverse
+      flex-direction: row
+      @media (max-width: 800px)
+        flex-direction: column-reverse
+
+.footerFirst
+  display: flex
+  flex-direction: column
+  background-color: #1a5b7b
+  align-items: center
+
+  .footerContent
+    max-width: 1200px
+    padding: 20px 40px
+
+    .text
+      font-size: 22px
+      line-height: 1.5
+      color: white
+
+.footerLast
+  display: flex
+  flex-direction: column
+  background-color: #10384d
+  align-items: center
+
+  .footerContent
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    max-width: 1200px
+    width: 100%
+    padding: 20px 20px
+
+    .text
+      font-size: 16px
+      line-height: 1.5
+      color: white
+
+    .networks
+      display: flex
+      flex-direction: row
+
+      .network
+        width: 40px
+        height: 40px
+        background-color: #75bee2
+        border-radius: 100%
+        margin: 0 10px
+
+      .twiter
+        @extend .network
+        background-image: url("../../../../assets/networks/twiter.png")
+        background-position: center
+        background-size: cover
+
+      .pinterest
+        @extend  .network
+        background-image: url("../../../../assets/networks/pinterest.png")
+        background-position: center
+        background-size: cover
+
+      .youtube
+        @extend  .network
+        background-image: url("../../../../assets/networks/youtube.png")
+        background-position: center
+        background-size: cover
+
+      .google
+        @extend  .network
+        background-image: url("../../../../assets/networks/google.png")
+        background-position: center
+        background-size: cover

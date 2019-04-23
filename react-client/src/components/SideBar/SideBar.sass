@@ -1,0 +1,183 @@
+.Sidebar
+  display: flex
+  flex-direction: column
+  margin: 5px
+  width: 200px
+  min-width: 200px
+
+  .noselect
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+  .block
+    background-color: white
+    margin-bottom: 20px
+    width: 100%
+    display: flex
+    flex-direction: column
+
+    .icon
+      background-position: center
+      background-size: cover
+      margin-right: 10px
+
+    .item
+      padding: 10px
+      font-family: 'Montserrat', sans-serif
+      font-weight: 500
+      font-size: 15px
+      cursor: pointer
+
+    .item:hover
+      color: #3063ba
+      border-top: 1px solid #3063ba
+      border-bottom: 1px solid #3063ba
+
+    .item-with-icon
+      cursor: pointer
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+      .title
+        padding: 10px
+        font-family: 'Montserrat', sans-serif
+        font-weight: 500
+        font-size: 16px
+
+      .icon-text
+        margin: 5px 10px 5px 5px
+        padding: 5px 8px
+        font-family: 'Montserrat', sans-serif
+        font-weight: 500
+        font-size: 16px
+        background-color: #ff7c2e
+        border-radius: 5px
+        color: white
+
+      .icon-img
+        width: 20px
+        height: 20px
+        background-position: center
+        background-size: cover
+        margin-right: 10px
+
+    .item-with-icon:hover
+      color: #3063ba
+      border-top: 1px solid #3063ba
+      border-bottom: 1px solid #3063ba
+
+  .btn-find-menu
+    cursor: pointer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #319dd4
+
+    .title
+      padding: 10px
+      font-family: 'Montserrat', sans-serif
+      font-weight: 500
+      font-size: 16px
+      color: white
+
+    .icon-open
+      @extend .icon
+      width: 20px
+      height: 20px
+      background-image: url("../../assets/icons/icon-up.png")
+
+    .icon-close
+      @extend .icon
+      width: 20px
+      height: 20px
+      background-image: url("../../assets/icons/icon-down.png")
+
+  .btn-find-menu:hover
+    background-color: white
+
+    .title
+      color: #319dd4
+
+    .icon-open
+      @extend .icon
+      width: 20px
+      height: 20px
+      background-image: url("../../assets/icons/icon-up-blue.png")
+
+    .icon-close
+      @extend .icon
+      width: 20px
+      height: 20px
+      background-image: url("../../assets/icons/icon-down-blue.png")
+
+  .filters
+    display: flex
+    flex-direction: column
+    background-color: white
+    padding: 5px
+
+    .input
+      padding: 5px
+      font-family: 'Montserrat', sans-serif
+      border-radius: 5px
+      margin-bottom: 10px
+      font-size: 13px
+
+    span.title
+      font-family: 'Montserrat', sans-serif
+      font-size: 13px
+      font-weight: 500
+      margin-bottom: 2px
+
+    select
+      border: 1px solid #D4D9E2
+      background-color: white
+      color: #2d3339
+      outline: 0
+      padding: 5px
+      border-radius: 5px
+      margin-bottom: 10px
+      font-size: 13px
+
+      option:checked
+        background-color: #319dd4
+        color: white
+
+    .checkbox
+      margin-bottom: 10px
+      display: flex
+      align-items: center
+      cursor: pointer
+
+      label
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        font-weight: 500
+        margin-left: 3px
+        cursor: pointer
+
+    .btn-find
+      cursor: pointer
+      display: flex
+      justify-content: center
+      align-items: center
+      border: 1px solid #319dd4
+      background-color: white
+      padding: 2px 0
+
+      .title
+        padding: 2px
+        font-family: 'Montserrat', sans-serif
+        font-weight: 600
+        font-size: 16px
+        color: #319dd4
+
+    .btn-find:hover
+      background-color: #319dd4
+
+      .title
+        color: white
